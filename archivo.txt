@@ -1,0 +1,6 @@
+{
+    "nombre" : "Marlon",
+    "apellido" : "Masabanda",
+    "edad" : 22,
+    "educacion" : [{"primaria":"Gonzales Suarez","secundaria":"Mario Cobo Barona"}]
+}

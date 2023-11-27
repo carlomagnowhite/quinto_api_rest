@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "archivo.txt");
+        xhttp.send();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.status);
+                console.log(this.readyState);
+                console.log(this.responseText);
+                var objetoJS = JSON.parse(this.responseText);
+                console.log(objetoJS['nombre']);
+            };
+        };
+    </script>
+</body>
+
+</html>
